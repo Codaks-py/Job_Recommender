@@ -1,3 +1,10 @@
 Jobber/
 venv/
 env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.dll
+*.so
+*.dylib
