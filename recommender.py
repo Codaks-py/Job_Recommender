@@ -16,10 +16,10 @@ def modelling(df):
 
 
 def job_recommend(user_input, df, embeddings):
-    user_embedding = model.encode(user_input)
+    user_embedding = model.encode([user_input])
     similarity = cosine_similarity(user_embedding, embeddings)[0]
 
-    top_matches = np.argsort(similarity)[::-1][:5]
+    top_matches = np.argsort(similarity)[::-1][:10]
 
     results = []
     for idx in top_matches:

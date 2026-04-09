@@ -29,6 +29,10 @@ for job in soup.find_all('tr', class_ = 'job'):
 df = pd.DataFrame(job_list)
 
 df
+
+Experienced backend developer with 5+ years in Python, Django, REST APIs,
+and cloud deployment on AWS. Skilled in PostgreSQL, Docker, and CI/CD pipelines.
+Looking for remote opportunities in scalable backend systems
 """
 
 def data_load():
@@ -49,6 +53,7 @@ def data_load():
         })
 
     df = pd.DataFrame(jobber)
-    df['text'] = df['title'] + '' + df['skills']
+    df['skills_str'] = df['skills'].apply(lambda x: ''.join(x) if isinstance(x, list) else str(x))
+    df['text'] = df['title'] + ' ' + df['skills_str']
 
     return df
