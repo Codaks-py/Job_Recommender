@@ -1,10 +1,66 @@
-Jobber/
-venv/
-env/
+# ------------------------
+# OS / System files
+# ------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------
+# Python cache / artifacts
+# ------------------------
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# ------------------------
+# Virtual environments
+# ------------------------
+jobber/
+venv/
+.venv/
+env/
+ENV/
+
+# ------------------------
+# Compiled libraries
+# ------------------------
 *.dll
 *.so
 *.dylib
+
+# ------------------------
+# Streamlit
+# ------------------------
+.streamlit/
+
+# ------------------------
+# Logs
+# ------------------------
+*.log
+logs/
+
+# ------------------------
+# IDE / Editor settings
+# ------------------------
+.vscode/
+.idea/
+*.swp
+
+# ------------------------
+# Build / Distribution
+# ------------------------
+build/
+dist/
+*.tar.gz
+*.whls
+
+# ------------------------
+# Environment / Secrets
+# ------------------------
+.env
+.env.*
