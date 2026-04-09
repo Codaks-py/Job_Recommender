@@ -1,8 +1,9 @@
-"""
+
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
+"""
 url = 'https://www.remoteok.com/remote-dev-jobs'
 headers = {'User-Agent': 'Mozilla/5.0'}
 
@@ -30,28 +31,24 @@ df = pd.DataFrame(job_list)
 df
 """
 
+def data_load():
+    url = 'https://www.remoteok.com/remote-dev-jobs.json'
+    headers = {'User-Agent': 'Mozilla/5.0', 'Accept' : 'application/json'}
 
-import requests
-import pandas as pd
-
-url = 'https://www.remoteok.com/remote-dev-jobs.json'
-headers = {'User-Agent': 'Mozilla/5.0', 'Accept' : 'application/json'}
-
-response = requests.get(url, headers = headers)
-jobs = response.json()
+    response = requests.get(url, headers = headers)
+    jobs = response.json()
 
 
-jobber = []
-for job in jobs[1:]:
-    jobber.append({
-        'title' : job.get('position'),
-        'company' : job.get('company'),
-        'skills' : job.get('tags'),
-        'link' : job.get('url')
-    })
+    jobber = []
+    for job in jobs[1:]:
+        jobber.append({
+            'title' : job.get('position'),
+            'company' : job.get('company'),
+            'skills' : job.get('tags'),
+            'link' : job.get('url')
+        })
 
+    df = pd.DataFrame(jobber)
+    df['text'] = df['title'] + '' + df['skills']
 
-
-df = pd.DataFrame(jobber)
-df.to_csv('remote_jobs.csv', index=True)
-
+    return df
