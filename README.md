@@ -20,7 +20,7 @@ Unlike traditional systems that rely on keyword matching, this system understand
 
 ### 🔍 Real-Time Job Scraping
 
-* Dynamically fetches job listings from an online source (RemoteOK)
+* Dynamically fetches job listings from RemoteOK
 * Ensures up-to-date job recommendations
 
 ### 📄 Resume Parsing
