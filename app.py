@@ -7,7 +7,7 @@ import docx
 
 
 st.set_page_config(page_title='Your Personal Job Recommender', layout='wide')
-st.title("Your Job Recommender")
+st.title("AI Job Recommender System")
 
 
 
