@@ -20,7 +20,7 @@ Unlike traditional systems that rely on keyword matching, this system understand
 
 ### 🔍 Real-Time Job Scraping
 
-* Dynamically fetches job listings from RemoteOK
+* Dynamically fetches job listings from RemoteOK, Adzuna Api
 * Ensures up-to-date job recommendations
 
 ### 📄 Resume Parsing
@@ -180,11 +180,8 @@ Similar techniques are used in modern platforms like LinkedIn and Indeed.
 
 ## 🚀 Future Improvements
 
-* 🌐 Multi-source job scraping (LinkedIn, Indeed APIs)
+* 🌐 Multi-source job scraping 
 * 🤖 Upgrade to advanced embeddings (fine-tuned models)
-* 🧩 User profiles & saved jobs
-* 📊 Analytics dashboard
-* 📬 Email job alerts
 
 ---
 
