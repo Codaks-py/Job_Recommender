@@ -58,7 +58,7 @@ def data_load():
     all_jobs.extend(jobber)
 
     #For Adzuna APi
-    country = ['us', 'za', 'ca', 'gb', 'au', 'in','nl', 'fr', 'de', 'es', 'pl']
+    country = ['us', 'za', 'ca', 'gb', 'au', 'in','nl', 'fr', 'es']
 
     for c in country:
         Adzuna_url = f'https://api.adzuna.com/v1/api/jobs/{c}/search/{2}'
