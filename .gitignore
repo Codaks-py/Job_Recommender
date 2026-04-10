@@ -1,0 +1,7 @@
+jobber/
+venv/
+env/
+*.dll
+__pycache__/
+
+/jobber/Lib/site-packages/
