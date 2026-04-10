@@ -1,0 +1,8 @@
+scikit-learn
+streamlit
+pandas
+requests
+numpy
+sentence-transfomers
+docx
+pdfplumber
