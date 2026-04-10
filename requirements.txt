@@ -99,5 +99,5 @@ tzdata==2026.1
 urllib3==2.6.3
 watchdog==6.0.0
 wcwidth==0.6.0
-spacy==3.5.4
+spacy
 en-core-web-sm==3.5.0
