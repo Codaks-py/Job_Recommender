@@ -36,6 +36,7 @@ elif options == 'Type in your skills':
     user_in = st.text_area('Type in your skills here:')
 
 st.write('Explore the similarity score to find similar roles that match your skills and experiences.')
+st.write('*0 = No similarity, 1 = High similarity*')
 thre = st.slider('Minimum similarity score', 0.0, 0.5, 1.0)
 
 
