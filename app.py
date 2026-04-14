@@ -35,7 +35,9 @@ if options == 'Upload your resume(PDF/DOCX)':
 elif options == 'Type in your skills':
     user_in = st.text_area('Type in your skills here:')
 
+st.write('Edit the similarity score to find how similar you want the skills to match the Job Recommendation')
 thre = st.slider('Minimum similarity score', 0.0, 0.5, 1.0)
+
 
 if user_in and st.button('Find Availiable Jobs'):
 
