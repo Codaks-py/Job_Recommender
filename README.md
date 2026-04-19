@@ -124,6 +124,8 @@ streamlit run app.py
 2. Click **"Get Recommendations"**
 3. View ranked job matches instantly
 
+link: https://jobrecommenderapp.streamlit.app/
+
 ---
 
 ## 📊 Output
